@@ -1,1 +1,1 @@
-This is my personal website. Check it out at [JiahaoShu.github.io](https://JiahaoShu.github.io).
+This is the source code to Jiahao Shu's public academic website: https://jiahaoshu.github.io. The framework is stolen from [Jon Barron](https://jonbarron.info).
