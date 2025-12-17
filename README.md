@@ -1,1 +1,5 @@
-This is the source code to Jiahao Shu's public academic website: https://jiahaoshu.github.io. The framework is stolen from [Jon Barron](https://jonbarron.info).
+# Jiahao Shu's Personal Website
+
+This is the source code for my personal academic website: [https://jiahaoshu.github.io](https://jiahaoshu.github.io)
+
+A simple, clean homepage for a Computer Science undergraduate student.
