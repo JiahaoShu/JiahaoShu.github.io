@@ -182,21 +182,6 @@ ul li br + em {
   margin-top: 4px;
 }
 
-/* Images */
-.medals {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.medals img {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  padding: 5px;
-  background: #fafafa;
-}
-
 /* Footer */
 footer {
   margin-top: 60px;
