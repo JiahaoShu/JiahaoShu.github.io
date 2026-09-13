@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Jiahao Shu</title>
     <meta name="author" content="Jiahao Shu">
+    <meta name="description" content="Jiahao Shu, master's student at Carnegie Mellon University. Applied machine learning, embodied AI, autonomous driving.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -11,15 +12,20 @@
 
   <body>
     <div class="container">
+      <button id="langToggle" class="lang-toggle">中文</button>
+
       <header class="header">
         <div class="profile-section">
           <img src="images/Jiahaoshu.jpg" alt="Jiahao Shu" class="profile-img">
           <div class="profile-info">
             <h1>Jiahao Shu <span class="zh-name">(舒佳豪)</span></h1>
-            <p class="affiliation">University of Science and Technology of China</p>
+            <p class="affiliation">
+              <span class="en">Carnegie Mellon University</span>
+              <span class="zh">卡内基梅隆大学</span>
+            </p>
             <div class="contact">
-              shujh [at] mail.ustc.edu.cn · 
-              <a href="https://github.com/JiahaoShu">GitHub</a> · 
+              jiahaos [at] andrew.cmu.edu ·
+              <a href="https://github.com/JiahaoShu">GitHub</a> ·
               <a href="https://www.linkedin.com/in/jiahaoshu/">LinkedIn</a>
             </div>
           </div>
@@ -28,44 +34,113 @@
 
       <main class="main-content">
         <section>
-          <p>
-            I'm a fourth-year undergraduate studying Computer Science at USTC. 
-            I completed a visiting semester at UC Berkeley during spring 2025 and am preparing for graduate school applications.
+          <p class="en">
+            I'm a master's student in Information Technology Strategy (MITS) at
+            <strong>Carnegie Mellon University</strong>, expected to graduate in December 2027.
+            I received my B.S. in Computer Science from the University of Science and Technology of China (USTC)
+            in June 2026, and spent a visiting semester at UC Berkeley in spring 2025.
           </p>
-          <p>
-            My research interests include <strong>applied machine learning</strong>, <strong>causal inference</strong>, 
-            and <strong>robust AI systems</strong>. I'm particularly interested in understanding how models 
+          <p class="zh">我目前在<strong>卡内基梅隆大学</strong>攻读信息技术战略硕士（MITS），预计 2027 年 12 月毕业。2026 年 6 月本科毕业于中国科学技术大学计算机科学专业，2025 年春季曾在加州大学伯克利分校访学一学期。</p>
+          <p class="en">
+            My interests include <strong>applied machine learning</strong>, <strong>embodied AI and autonomous driving</strong>,
+            and <strong>robust AI systems</strong>. I'm particularly interested in understanding how models
             behave in real-world conditions and building systems that work reliably beyond their training environments.
           </p>
+          <p class="zh">我的兴趣包括<strong>应用机器学习</strong>、<strong>具身智能与自动驾驶</strong>，以及<strong>鲁棒的 AI 系统</strong>。我特别关注模型在真实世界条件下的表现，以及如何构建在训练环境之外依然可靠运行的系统。</p>
+          <p class="en">I'm looking for Summer 2027 internships in machine learning and software engineering.</p>
+          <p class="zh">我正在寻找 2027 年暑期机器学习或软件工程方向的实习。</p>
         </section>
 
         <section>
-          <h2>Research</h2>
-          <p>
-            I've had opportunities to work on research in computer vision and machine learning. 
-            Recently, I'm working on controllable trajectory prediction for autonomous vehicles at HKUST (Guangzhou), 
-            advised by Prof. Zhiqing Hong. Previously, I've explored topics ranging from evaluating vision-language 
-            models at Berkeley, to studying user preferences for AI-generated content, to developing weather-aware 
-            image restoration systems.
-          </p>
+          <h2><span class="en">Experience</span><span class="zh">经历</span></h2>
+          <ul class="entries">
+            <li>
+              <strong><span class="en">Lenovo</span><span class="zh">联想</span></strong>
+              <span class="meta">
+                <span class="en">Embodied AI Intern · Hefei, China · Jan 2026 – Jul 2026</span>
+                <span class="zh">具身智能实习生 · 中国合肥 · 2026.01 – 2026.07</span>
+              </span>
+              <span class="desc">
+                <span class="en">Built the data-to-deployment pipeline for vision-language-action (VLA) policies on dual-arm robots,
+                  from VR teleoperation data and model fine-tuning to on-robot ROS 2 inference.</span>
+                <span class="zh">为双臂机器人搭建视觉-语言-动作（VLA）策略从数据到部署的完整流程：VR 遥操作数据采集、模型微调，到机器人端的 ROS 2 推理。</span>
+              </span>
+            </li>
+            <li>
+              <strong><span class="en">Hong Kong University of Science and Technology</span><span class="zh">香港科技大学（广州）</span></strong>
+              <span class="meta">
+                <span class="en">Research Assistant, Autonomous Driving · Guangzhou, China · Aug 2025 – May 2026</span>
+                <span class="zh">研究助理（自动驾驶）· 中国广州 · 2025.08 – 2026.05</span>
+              </span>
+              <span class="desc">
+                <span class="en">Developed text-conditioned diffusion models for trajectory prediction and closed-loop driving simulation on nuPlan.</span>
+                <span class="zh">研究文本条件扩散模型，用于 nuPlan 上的轨迹预测与闭环驾驶仿真。</span>
+              </span>
+            </li>
+            <li>
+              <strong><span class="en">Berkeley AI Research (BAIR), UC Berkeley</span><span class="zh">加州大学伯克利分校 BAIR 实验室</span></strong>
+              <span class="meta">
+                <span class="en">Research Assistant, Vision-Language Models · Berkeley, CA · Mar 2025 – Oct 2025</span>
+                <span class="zh">研究助理（视觉-语言模型）· 美国伯克利 · 2025.03 – 2025.10</span>
+              </span>
+              <span class="desc">
+                <span class="en">Studied how visual-prompt design (marker color, size, label placement) shifts the accuracy of
+                  vision-language models such as GPT-4o and Gemini.</span>
+                <span class="zh">研究视觉提示的设计（标记颜色、大小、标签位置）如何影响 GPT-4o、Gemini 等视觉-语言模型的准确率。</span>
+              </span>
+            </li>
+          </ul>
+          <p class="en">Earlier, I also explored user preferences for AI-generated content and weather-aware image restoration.</p>
+          <p class="zh">更早之前，我还做过 AI 生成内容的用户偏好分析，以及天气感知的图像修复。</p>
         </section>
 
         <section>
-          <h2>Miscellaneous</h2>
-          <p>
-            Outside of research, I enjoy long-distance running. I've completed several 10K campus races 
-            and marathons. Running helps me think through research problems and maintain balance.
+          <h2><span class="en">Publication</span><span class="zh">论文</span></h2>
+          <ul class="entries">
+            <li>
+              <strong><a href="https://arxiv.org/abs/2512.17875">Visually Prompted Benchmarks Are Surprisingly Fragile</a></strong>
+              <span class="meta">
+                Haiwen Feng, Long Lian, Lisa Dunlap, <span class="me">Jiahao Shu</span>, XuDong Wang, Renhao Wang,
+                Trevor Darrell, Alane Suhr, Angjoo Kanazawa
+              </span>
+              <span class="desc">arXiv:2512.17875, 2025</span>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="en">Miscellaneous</span><span class="zh">其他</span></h2>
+          <p class="en">
+            Outside of work, I enjoy long-distance running. I've completed several 10K campus races
+            and marathons. Running helps me think through problems and maintain balance.
           </p>
+          <p class="zh">工作之外，我热爱长跑运动。我完成过多次校园 10 公里跑和马拉松比赛。跑步帮助我思考问题并保持身心平衡。</p>
           <div class="medals">
             <img src="images/medals.jpg" alt="My running medals from 10K races and marathons">
-            <p>Medals from 10K races and half marathons</p>
+            <p>
+              <span class="en">Medals from 10K races and half marathons</span>
+              <span class="zh">10 公里和半程马拉松奖牌</span>
+            </p>
           </div>
         </section>
       </main>
-      
+
       <footer>
-        <p>Last updated: December 2025</p>
+        <p>
+          <span class="en">Last updated: September 2026</span>
+          <span class="zh">最后更新：2026 年 9 月</span>
+        </p>
       </footer>
     </div>
+
+    <script>
+      const langToggle = document.getElementById('langToggle');
+
+      langToggle.addEventListener('click', function() {
+        const next = document.documentElement.lang === 'zh' ? 'en' : 'zh';
+        document.documentElement.lang = next;
+        langToggle.textContent = next === 'en' ? '中文' : 'EN';
+      });
+    </script>
   </body>
 </html>

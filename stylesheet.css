@@ -15,6 +15,38 @@ body {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 30px;
+  position: relative;
+}
+
+/* Language Toggle Button */
+.lang-toggle {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  z-index: 100;
+}
+
+.lang-toggle:hover {
+  background: #1d4278;
+  transform: translateY(-2px);
+}
+
+.lang-toggle:active {
+  transform: translateY(0);
+}
+
+html:not([lang="zh"]) .zh,
+html[lang="zh"] .en {
+  display: none !important;
 }
 
 /* Header */
@@ -182,6 +214,23 @@ ul li br + em {
   margin-top: 4px;
 }
 
+.entries .meta {
+  display: block;
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.entries .desc {
+  display: block;
+  margin-top: 4px;
+}
+
+.entries .me {
+  font-weight: 600;
+  color: #222;
+}
+
 /* Footer */
 footer {
   margin-top: 60px;
@@ -196,6 +245,13 @@ footer {
 @media (max-width: 750px) {
   body {
     padding: 30px 20px;
+  }
+
+  .lang-toggle {
+    top: 30px;
+    right: 20px;
+    padding: 6px 14px;
+    font-size: 0.85rem;
   }
 
   .profile-section {
@@ -232,6 +288,13 @@ footer {
   body {
     font-size: 16px;
     padding: 20px 15px;
+  }
+
+  .lang-toggle {
+    top: 20px;
+    right: 15px;
+    padding: 5px 12px;
+    font-size: 0.8rem;
   }
 
   h1 {
