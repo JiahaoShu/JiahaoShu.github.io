@@ -72,6 +72,7 @@ html[lang="zh"] .en {
 
 .profile-info {
   flex: 1;
+  min-width: 0;
   padding-top: 10px;
 }
 
@@ -224,6 +225,41 @@ ul li br + em {
 .entries .desc {
   display: block;
   margin-top: 4px;
+}
+
+.entries .desc + .desc {
+  margin-top: 8px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #2c5aa0;
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  transform: translateY(-200%);
+  padding: 4px 8px;
+  background: white;
+  z-index: 101;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lang-toggle,
+  .contact a {
+    transition: none;
+  }
+
+  .lang-toggle:hover {
+    transform: none;
+  }
 }
 
 .entries .me {

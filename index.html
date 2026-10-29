@@ -2,17 +2,28 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title>Jiahao Shu</title>
     <meta name="author" content="Jiahao Shu">
     <meta name="description" content="Jiahao Shu, master's student at Carnegie Mellon University. Applied machine learning, embodied AI, autonomous driving.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://www.jiahaoshu.top/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jiahao Shu | Applied Machine Learning">
+    <meta property="og:description" content="CMU MITS student working on applied machine learning, robot learning, and reliable model evaluation. Seeking Summer 2027 ML and software engineering internships.">
+    <meta property="og:url" content="https://www.jiahaoshu.top/">
+    <meta property="og:image" content="https://www.jiahaoshu.top/images/Jiahaoshu.jpg">
+    <meta property="og:image:alt" content="Jiahao Shu">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="script.js" defer></script>
   </head>
 
   <body>
+    <a class="skip-link" href="#main"><span class="en">Skip to content</span><span class="zh">跳到正文</span></a>
     <div class="container">
-      <button id="langToggle" class="lang-toggle">中文</button>
+      <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch to Chinese" lang="zh-CN">中文</button>
 
       <header class="header">
         <div class="profile-section">
@@ -32,7 +43,7 @@
         </div>
       </header>
 
-      <main class="main-content">
+      <main class="main-content" id="main" tabindex="-1">
         <section>
           <p class="en">
             I'm a master's student in Information Technology Strategy (MITS) at
@@ -67,14 +78,18 @@
               </span>
             </li>
             <li>
-              <strong><span class="en">Hong Kong University of Science and Technology</span><span class="zh">香港科技大学（广州）</span></strong>
+              <strong><span class="en">Hong Kong University of Science and Technology (Guangzhou)</span><span class="zh">香港科技大学（广州）</span></strong>
               <span class="meta">
                 <span class="en">Research Assistant, Autonomous Driving · Guangzhou, China · Aug 2025 – May 2026</span>
                 <span class="zh">研究助理（自动驾驶）· 中国广州 · 2025.08 – 2026.05</span>
               </span>
               <span class="desc">
-                <span class="en">Developed text-conditioned diffusion models for trajectory prediction and closed-loop driving simulation on nuPlan.</span>
-                <span class="zh">研究文本条件扩散模型，用于 nuPlan 上的轨迹预测与闭环驾驶仿真。</span>
+                <span class="en">Built a language-conditioned trajectory planner in PyTorch, combining T5 text embeddings with a Diffusion Transformer.</span>
+                <span class="zh">使用 PyTorch 构建语言条件轨迹规划器，将 T5 文本嵌入与 Diffusion Transformer 结合。</span>
+              </span>
+              <span class="desc">
+                <span class="en">Developed a two-pass workflow that described an initial trajectory in language, then replanned with that description. Evaluated the refinements in nuPlan closed-loop simulation.</span>
+                <span class="zh">设计两阶段流程：先从初始轨迹提取驾驶行为描述，再以文本为条件重新规划，并在 nuPlan 闭环仿真中评估改进效果。</span>
               </span>
             </li>
             <li>
@@ -84,9 +99,12 @@
                 <span class="zh">研究助理（视觉-语言模型）· 美国伯克利 · 2025.03 – 2025.10</span>
               </span>
               <span class="desc">
-                <span class="en">Studied how visual-prompt design (marker color, size, label placement) shifts the accuracy of
-                  vision-language models such as GPT-4o and Gemini.</span>
-                <span class="zh">研究视觉提示的设计（标记颜色、大小、标签位置）如何影响 GPT-4o、Gemini 等视觉-语言模型的准确率。</span>
+                <span class="en">Built a Python evaluation pipeline for local and API-hosted vision-language models, covering dataset preparation, controlled visual-prompt experiments, parallel inference, and accuracy analysis.</span>
+                <span class="zh">搭建面向本地及 API 视觉语言模型的 Python 评测流程，涵盖数据准备、视觉提示对照实验、并行推理与准确率分析。</span>
+              </span>
+              <span class="desc">
+                <span class="en">Evaluated nine models across 16 marker variants to study how visual prompts affect performance. Co-authored <a href="#publications">Visually Prompted Benchmarks Are Surprisingly Fragile</a>.</span>
+                <span class="zh">评测 9 个模型在 16 种标记变体下的表现，研究视觉提示设计对模型性能的影响，并共同署名<a href="#publications">《Visually Prompted Benchmarks Are Surprisingly Fragile》</a>。</span>
               </span>
             </li>
           </ul>
@@ -95,7 +113,7 @@
         </section>
 
         <section>
-          <h2><span class="en">Publication</span><span class="zh">论文</span></h2>
+          <h2 id="publications"><span class="en">Publication</span><span class="zh">论文</span></h2>
           <ul class="entries">
             <li>
               <strong><a href="https://arxiv.org/abs/2512.17875">Visually Prompted Benchmarks Are Surprisingly Fragile</a></strong>
@@ -116,7 +134,7 @@
           </p>
           <p class="zh">工作之外，我热爱长跑运动。我完成过多次校园 10 公里跑和马拉松比赛。跑步帮助我思考问题并保持身心平衡。</p>
           <div class="medals">
-            <img src="images/medals.jpg" alt="My running medals from 10K races and marathons">
+            <img src="images/medals.jpg" alt="My running medals from 10K races and marathons" loading="lazy" decoding="async">
             <p>
               <span class="en">Medals from 10K races and half marathons</span>
               <span class="zh">10 公里和半程马拉松奖牌</span>
@@ -127,20 +145,11 @@
 
       <footer>
         <p>
-          <span class="en">Last updated: September 2026</span>
-          <span class="zh">最后更新：2026 年 9 月</span>
+          <span class="en">Last updated: October 2026</span>
+          <span class="zh">最后更新：2026 年 10 月</span>
         </p>
       </footer>
     </div>
 
-    <script>
-      const langToggle = document.getElementById('langToggle');
-
-      langToggle.addEventListener('click', function() {
-        const next = document.documentElement.lang === 'zh' ? 'en' : 'zh';
-        document.documentElement.lang = next;
-        langToggle.textContent = next === 'en' ? '中文' : 'EN';
-      });
-    </script>
   </body>
 </html>
